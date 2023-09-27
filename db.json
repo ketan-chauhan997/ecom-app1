@@ -35,6 +35,12 @@
       "password": "gungun@123",
       "email": "gungun@gmail.com",
       "id": 6
+    },
+    {
+      "name": "Chanchal",
+      "password": "chanchal@123",
+      "email": "chanchal@gmail.com",
+      "id": 7
     }
   ]
 }
