@@ -1,0 +1,40 @@
+{
+  "seller": [
+    {
+      "name": "Devinder",
+      "password": "DEVI@9816",
+      "email": "devinder10230@gmail.com",
+      "id": 1
+    },
+    {
+      "name": "Ketan",
+      "password": "1610992124ketan",
+      "email": "chauhan.25997@gmail.com",
+      "id": 2
+    },
+    {
+      "name": "Ketan",
+      "password": "1610992124ketan",
+      "email": "chauhan.25997@gmail.com",
+      "id": 3
+    },
+    {
+      "name": "Abhinav",
+      "password": "2124Nav",
+      "email": "nav@gmail.com",
+      "id": 4
+    },
+    {
+      "name": "Vidya",
+      "password": "vidya9816",
+      "email": "vidya@gmail.com",
+      "id": 5
+    },
+    {
+      "name": "Gungun",
+      "password": "gungun@123",
+      "email": "gungun@gmail.com",
+      "id": 6
+    }
+  ]
+}

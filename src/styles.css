@@ -4,3 +4,23 @@ body{
 .container{
     margin: 0 1vw;
 }
+.common-form{
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    /* justify-content: center; */
+    /* text-align: center; */
+    margin: auto;
+}
+.form-input{
+    height: 7vh;
+    margin-bottom: 20px;
+    padding-left: 10px;
+    border: 1px solid blueviolet;
+    color: blueviolet;
+}
+.form-button{
+    height: 35px;
+    cursor: pointer;
+    border: 1px solid blueviolet;
+}
