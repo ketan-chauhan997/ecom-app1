@@ -10,11 +10,12 @@
         </form>
     </div>
     <div class="loginSeller" *ngIf="showLogin">
-        <h1>Seller Login Up</h1>
+        <h1>Seller Login</h1>
+        <p class="error-p">{{showSellerLoginError}}</p>
         <form #sellerLogin="ngForm" (ngSubmit)="LoginSeller(sellerLogin.value)" class="common-form">
             <input type="text" ngModel name="email" class="form-input" placeholder="Enter Email">
             <input type="password" ngModel name="password" class="form-input" placeholder="Enter Password">
-            <button class="form-button">Sign Up</button>
+            <button class="form-button">Login</button>
             <a (click)="OpenSeller()">Don't Have Account? Click to Login</a>
         </form>
     </div>

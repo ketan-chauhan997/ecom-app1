@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { SellerService } from '../services/seller.service';
 import { Router } from '@angular/router';
-import { SignUp } from '../data-type';
+import { Login, SignUp } from '../data-type';
 
 @Component({
   selector: 'app-seller-auth',
@@ -11,6 +11,7 @@ import { SignUp } from '../data-type';
 export class SellerAuthComponent {
   constructor(private seller:SellerService, private route: Router){}
   showLogin:boolean=false;
+  showSellerLoginError:string='';
   ngOnInit():void{
     this.seller.reloadSeller();
   }
@@ -18,8 +19,15 @@ export class SellerAuthComponent {
     // console.warn(value)
     this.seller.sellerSignUp(value);
   }
-  LoginSeller(value:any){
-
+  LoginSeller(data:Login){
+    this.showSellerLoginError='';
+    // console.warn(data);
+    this.seller.sellerLogin(data);
+    this.seller.isSellerLoginError.subscribe((error)=>{
+      if(error){
+        this.showSellerLoginError="Username or Password is not valid";
+      }
+    })
   }
   OpenLogin(){
     this.showLogin=true;

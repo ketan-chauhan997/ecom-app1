@@ -25,3 +25,6 @@ body{
     border: 1px solid blueviolet;
     margin-bottom: 20px;
 }
+.error-p{
+    color: red;
+}
