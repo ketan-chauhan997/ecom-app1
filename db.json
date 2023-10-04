@@ -48,5 +48,25 @@
       "email": "priyanka@gmail.com",
       "id": 8
     }
+  ],
+  "products": [
+    {
+      "prodName": "Iphone 11",
+      "prodPrice": "50000",
+      "prodColor": "White",
+      "prodCategory": "1",
+      "prodDescription": "Iphone 11 64 Gb",
+      "prodImageUrl": "https://m.media-amazon.com/images/I/71QE00iB9IL._SL1500_.jpg",
+      "id": 1
+    },
+    {
+      "prodName": "Samsung S22 Ultra",
+      "prodPrice": "125000",
+      "prodColor": "Dark Red",
+      "prodCategory": "1",
+      "prodDescription": "Samsung S22 Ultra 256 Gb",
+      "prodImageUrl": "https://m.media-amazon.com/images/I/71J8tz0UeJL._SL1500_.jpg",
+      "id": 2
+    }
   ]
 }

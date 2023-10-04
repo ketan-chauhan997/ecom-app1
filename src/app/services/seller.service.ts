@@ -1,6 +1,6 @@
 import { EventEmitter, Injectable } from '@angular/core';
 import {HttpClient} from '@angular/common/http'
-import { Login, SignUp } from '../data-type';
+import { Login, Product, SignUp } from '../data-type';
 import { BehaviorSubject } from 'rxjs/internal/BehaviorSubject';
 import { Route, Router } from '@angular/router';
 
@@ -42,4 +42,5 @@ export class SellerService {
     })
     // console.warn(test);
   }
+
 }
