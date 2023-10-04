@@ -1,0 +1,13 @@
+table{
+    text-align: left;
+    color: blueviolet;
+    border-collapse: collapse;
+}
+table th, td{
+    border: 1px solid blueviolet;
+    padding: 10px;
+}
+img{
+    height: 100ppx;
+    width: 100px;
+}
