@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Product } from '../data-type';
 
 @Component({
   selector: 'app-seller-add-product',
@@ -6,5 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./seller-add-product.component.css']
 })
 export class SellerAddProductComponent {
-
+  addProducts(data:Product):void{
+    console.warn(data);
+  }
 }
