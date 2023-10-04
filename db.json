@@ -67,6 +67,15 @@
       "prodDescription": "Samsung S22 Ultra 256 Gb",
       "prodImageUrl": "https://m.media-amazon.com/images/I/71J8tz0UeJL._SL1500_.jpg",
       "id": 2
+    },
+    {
+      "prodName": "Men Supporter",
+      "prodPrice": "395",
+      "prodColor": "Black",
+      "prodCategory": "2",
+      "prodDescription": "Supporter men Black Color",
+      "prodImageUrl": "https://m.media-amazon.com/images/I/61A29Snco0L._SL1500_.jpg",
+      "id": 3
     }
   ]
 }
