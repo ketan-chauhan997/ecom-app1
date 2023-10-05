@@ -12,22 +12,25 @@
     /* padding: 0; */
     font-size: 6vh;
 }
-.nav-bar div input{
+.nav-search{
+    margin-top: 5px;
+}
+.nav-bar .nav-search input{
     margin: 0;
     /* padding: 0 7px; */
     padding: 0;
     border: 1px solid blueviolet;
     border-right: none;
-    height: 5vh;
+    height: 7vh;
     color: blueviolet;
 }
-.nav-bar div button{
+.nav-bar .nav-search button{
     margin: 0;
     border: 1px solid blueviolet;
     border-left: none;
     /* padding: 0 7px; */
     padding: 0;
-    height: 5.5vh;
+    height:7vh;
 }
 .nav-bar ul{
     display: flex;

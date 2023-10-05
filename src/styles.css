@@ -31,3 +31,8 @@ body{
 .message-p{
     color: green;
 }
+
+.carousel-control-next-icon, .carousel-control-prev-icon{
+    background-color: black;
+    border-radius: 5px;
+}
