@@ -21,7 +21,10 @@
                 <td>{{data.prodColor}}</td>
                 <td>{{data.prodCategory}}</td>
                 <td>{{data.prodDescription}}</td>
-                <td><button (click)="deleteProduct(data.id)" >Delete</button></td>
+                <td>
+                    <button (click)="deleteProduct(data.id)" >Delete</button>
+                    <button routerLink="/seller-update-product/{{data.id}}">Edit</button>
+                </td>
             </tr>
         </tbody>
     </table>
