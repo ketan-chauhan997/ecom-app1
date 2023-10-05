@@ -22,4 +22,9 @@ export class ProductService {
   getProductDetails(id:string){
     return this.http.get<Product>(`http://localhost:3000/products/${id}`);
   }
+
+  updateProduct(data:Product){
+    console.warn(data)
+    return this.http.put<Product>(`http://localhost:3000/products/${data.id}`,data);
+  }
 }
