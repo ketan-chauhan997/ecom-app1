@@ -48,3 +48,19 @@
     text-decoration: none;
     color: blueviolet;
 }
+
+.nav-bar .nav-search .suggested-products li{
+    padding: 5px;
+    color: blueviolet;
+    border: 1px solid #ddd;
+}
+
+
+.nav-bar .nav-search .suggested-products{
+    position: absolute;
+    display: list-item;
+    z-index: 10;
+    background-color: #fff;
+    width: 247px;
+    border: 1px solid #ddd;
+}

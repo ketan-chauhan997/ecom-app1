@@ -9,12 +9,16 @@ import { Product } from '../data-type';
 })
 export class HomeComponent {
   productsCarousel:undefined|Product[];
+  prodList:undefined|Product[];
   constructor(private product:ProductService){};
   ngOnInit():void{
     this.product.popularPorducts().subscribe((result)=>{
       console.warn(result);
       this.productsCarousel=result;
     })
+    this.product.productList().subscribe((result)=>{
+      console.warn(result);
+      this.prodList=result;
+    })
   }
-  images = [944, 1011, 984].map((n) => `https://picsum.photos/id/${n}/900/500`);
 }

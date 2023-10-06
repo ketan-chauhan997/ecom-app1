@@ -31,4 +31,12 @@ export class ProductService {
   popularPorducts(){
     return this.http.get<Product[]>('http://localhost:3000/products');
   }
+
+  productList(){
+    return this.http.get<Product[]>('http://localhost:3000/products');
+  }
+
+  serachedProducts(searchedKeyword:any){
+    return this.http.get<Product[]>(`http://localhost:3000/products?q=${searchedKeyword}`);
+  }
 }
