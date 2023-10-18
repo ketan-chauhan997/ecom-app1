@@ -1,10 +1,10 @@
 <p class="error-p" *ngIf="!searchResult">No Products found of this match</p>
 <div class="row searched-item" *ngFor="let item of searchResult">
     <div class="col-sm-3">
-        <img src="{{item.prodImageUrl}}" alt="">
+        <a routerLink="/details/{{item.id}}"><img src="{{item.prodImageUrl}}" alt=""></a>
     </div>
     <div class="col-sm-9 details">
-        <h6>{{item.prodName}}</h6>
+        <a routerLink="/details/{{item.id}}"><h6>{{item.prodName}}</h6></a>
         <p><b>Price: {{item.prodPrice}}</b></p>
         <p><span>Color:{{item.prodColor}}</span><span>Category: {{item.prodCategory}}</span></p>
         <p>{{item.prodDescription}}</p>
