@@ -15,9 +15,9 @@
             <button class="form-button">Add To Cart</button>
             <button class="form-button">Buy Now</button>
             <div class="quantity-group">
-                <button>-</button>
-                <input type="text" name="" id="" value="1">
-                <button>+</button>
+                <button (click)="handleQuantity('min')">-</button>
+                <input type="text" name="" id="" value="{{productQuantity}}">
+                <button (click)="handleQuantity('plus')">+</button>
             </div>
         </div>
     </div>

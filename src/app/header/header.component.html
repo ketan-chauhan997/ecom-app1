@@ -4,7 +4,7 @@
         <input #searchInput type="text" (keyup)="searchedProduct($event)" (blur)="hideSearch()" placeholder="Search for Product">
         <button (click)="submitSearch(searchInput.value)">Search</button>
         <ul class="suggested-products" *ngIf="searchedProducts">
-            <li *ngFor="let prod of searchedProducts"><a>{{prod.prodName}}</a></li>
+            <li *ngFor="let prod of searchedProducts"><a (mousedown)="redirectToDetails(prod.id)">{{prod.prodName}}</a></li>
         </ul>
     </div>
     <div [ngSwitch]="navBarType">
