@@ -36,3 +36,9 @@ body{
     background-color: black;
     border-radius: 5px;
 }
+.invalid-input{
+    text-align: left;
+    color: red;
+    font-size: 12px;
+    margin-top: -20px;
+}

@@ -9,7 +9,7 @@ import { UserService } from '../services/user.service';
 })
 export class UserAuthComponent {
   showUserLogin:boolean=false;
-  showUserLoginError:undefined|boolean;
+  showUserLoginError:undefined|string;
   constructor(private user:UserService){}
   ngOnInit():void{
     this.user.userAuthReload(); 
@@ -29,7 +29,7 @@ export class UserAuthComponent {
     this.user.LoginUser(val);
     this.user.userLoginErrorMessage.subscribe(error=>{
       if(error){
-        this.showUserLoginError=error;
+        this.showUserLoginError="Please enter Valid User Details";
       }
     }) 
   }
