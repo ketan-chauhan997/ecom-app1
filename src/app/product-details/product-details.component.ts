@@ -26,4 +26,17 @@ export class ProductDetailsComponent {
     else if(this.productQuantity>1 && val=='min')
       this.productQuantity-=1;
   }
+  AddToCart(){
+    if(this.productDetails){
+      this.productDetails.quantity=this.productQuantity;
+      if(localStorage.getItem('user')){
+        console.warn('user logged in')
+        console.warn(this.productDetails);
+      }
+      else{
+        console.warn('user not logged in');
+        this.product.localAddToCart(this.productDetails);
+      }
+    }
+  }
 }

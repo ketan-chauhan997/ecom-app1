@@ -12,7 +12,7 @@
             </div>
             <h6>Category : {{productDetails.prodCategory}}</h6>
             <h6>Description : {{productDetails.prodDescription}}</h6>
-            <button class="form-button">Add To Cart</button>
+            <button class="form-button" (click)="AddToCart()">Add To Cart</button>
             <button class="form-button">Buy Now</button>
             <div class="quantity-group">
                 <button (click)="handleQuantity('min')">-</button>
