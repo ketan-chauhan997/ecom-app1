@@ -17,3 +17,4 @@ export interface Product{
     prodImageUrl:string,
     id:number
 }
+// export inter

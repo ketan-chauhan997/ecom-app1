@@ -18,18 +18,22 @@ export class HeaderComponent {
     this.route.events.subscribe((value:any)=>{
       if(value.url){
         if(localStorage.getItem('seller') && value.url.includes('seller')){
+          this.sellerName=''
           console.warn("Inside seller area");
-          this.navBarType='seller'
+          this.navBarType='seller';
           let sellerVar= localStorage.getItem('seller');
-          let sellerData= sellerVar && JSON.parse(sellerVar)[0];
+          let sellerData= sellerVar && JSON.parse(sellerVar);
           this.sellerName=sellerData.name;
         }
         else if (localStorage.getItem('user') ){
+          this.userName='';
           console.warn('Inside User area');
           this.navBarType='user';
           let userVar= localStorage.getItem('user');
           let userData= userVar && JSON.parse(userVar);
-          this.userName=userData.name;
+          console.warn(userData);
+          console.warn(userData[0].name)
+          this.userName=userData[0].name;
         }
         else{
           console.warn('Outside Seller');
