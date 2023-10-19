@@ -13,18 +13,6 @@
       "id": 2
     },
     {
-      "name": "Ketan",
-      "password": "1610992124ketan",
-      "email": "chauhan.25997@gmail.com",
-      "id": 3
-    },
-    {
-      "name": "Abhinav",
-      "password": "2124Nav",
-      "email": "nav@gmail.com",
-      "id": 4
-    },
-    {
       "name": "Vidya",
       "password": "vidya9816",
       "email": "vidya@gmail.com",
@@ -35,18 +23,6 @@
       "password": "gungun@123",
       "email": "gungun@gmail.com",
       "id": 6
-    },
-    {
-      "name": "Chanchal",
-      "password": "chanchal@123",
-      "email": "chanchal@gmail.com",
-      "id": 7
-    },
-    {
-      "name": "Priyanka",
-      "password": "priyanka@123",
-      "email": "priyanka@gmail.com",
-      "id": 8
     }
   ],
   "products": [
@@ -103,6 +79,14 @@
       "prodDescription": "HP Victus Gaming Laptop AMD Ryzen 7",
       "prodImageUrl": "https://m.media-amazon.com/images/I/71ckDfWKZ8L._SX679_.jpg",
       "id": 6
+    }
+  ],
+  "users": [
+    {
+      "name": "Chanchal",
+      "password": "chanchal@123",
+      "email": "chanchal@gmail.com",
+      "id": 1
     }
   ]
 }
