@@ -88,5 +88,19 @@
       "email": "chanchal@gmail.com",
       "id": 1
     }
+  ],
+  "cart": [
+    {
+      "prodName": "Dell 15 Laptop",
+      "prodPrice": "50490",
+      "prodColor": "Grey",
+      "prodCategory": "3",
+      "prodDescription": "Dell Laptop 15 i5 ",
+      "prodImageUrl": "https://m.media-amazon.com/images/I/51ESP0tpoBL._SX679_.jpg",
+      "quantity": 2,
+      "userId": 1,
+      "productId": 4,
+      "id": 1
+    }
   ]
 }
