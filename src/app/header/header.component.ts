@@ -13,6 +13,7 @@ export class HeaderComponent {
   navBarType:string='default';
   sellerName:string='';
   userName:string='';
+  cartCount:number=0;
   searchedProducts:undefined|Product[];
   ngOnInit():void{
     this.route.events.subscribe((value:any)=>{
@@ -40,6 +41,13 @@ export class HeaderComponent {
           this.navBarType='default';
         }
       }
+    });
+    let cartData=localStorage.getItem('localCart');
+    if(cartData){
+      this.cartCount=JSON.parse(cartData).length;
+    }
+    this.product.cartData.subscribe(items=>{
+      this.cartCount=items.length;
     })
   }
   clearLocalStorage():void{
