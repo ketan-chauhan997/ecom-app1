@@ -58,6 +58,7 @@ export class ProductDetailsComponent {
         // console.warn(cartData)
         this.product.AddToUserCart(cartData).subscribe(result=>{
           console.warn(result);
+          alert('Product is added to cart!')
         })
       }
       else{
