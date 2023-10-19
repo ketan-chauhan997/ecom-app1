@@ -12,6 +12,7 @@ export class HeaderComponent {
   constructor(private route:Router, private product:ProductService){}
   navBarType:string='default';
   sellerName:string='';
+  userName:string='';
   searchedProducts:undefined|Product[];
   ngOnInit():void{
     this.route.events.subscribe((value:any)=>{
@@ -22,6 +23,13 @@ export class HeaderComponent {
           let sellerVar= localStorage.getItem('seller');
           let sellerData= sellerVar && JSON.parse(sellerVar)[0];
           this.sellerName=sellerData.name;
+        }
+        else if (localStorage.getItem('user') ){
+          console.warn('Inside User area');
+          this.navBarType='user';
+          let userVar= localStorage.getItem('user');
+          let userData= userVar && JSON.parse(userVar);
+          this.userName=userData.name;
         }
         else{
           console.warn('Outside Seller');
@@ -34,7 +42,10 @@ export class HeaderComponent {
     localStorage.removeItem('seller');
     this.route.navigate(['/']); 
   }
-
+  clearLocalStorageUser():void{
+    localStorage.removeItem('user');
+    this.route.navigate(['/user-auth'])
+  }
   searchedProduct(keyword:KeyboardEvent){
     if(keyword){
       const element= keyword.target as HTMLInputElement;

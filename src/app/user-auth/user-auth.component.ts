@@ -11,6 +11,9 @@ export class UserAuthComponent {
   showUserLogin:boolean=false;
   showUserLoginError:undefined|string;
   constructor(private user:UserService){}
+  ngOnInit():void{
+    this.user.userAuthReload(); 
+  }
   OpenLoginUser(){
     this.showUserLogin=true;
   }

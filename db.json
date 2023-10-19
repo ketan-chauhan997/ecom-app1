@@ -87,6 +87,18 @@
       "password": "chanchal@123",
       "email": "chanchal@gmail.com",
       "id": 1
+    },
+    {
+      "name": "Priyanka",
+      "password": "priyanka@123",
+      "email": "priyanka@gmail.com",
+      "id": 2
+    },
+    {
+      "name": "Tanshi",
+      "password": "tanshi@123",
+      "email": "tanshi@gmail.com",
+      "id": 3
     }
   ]
 }

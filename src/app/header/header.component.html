@@ -20,5 +20,12 @@
             <li><a (click)="clearLocalStorage()">Logout</a></li>
             <li><a>{{sellerName | titlecase}}</a></li>
         </ul>
+        <ul *ngSwitchCase="'user'">
+            <li><a routerLink="/seller-home">Home</a></li>
+            <li><a routerLink="/seller-add-product">Seller</a></li>
+            <li><a (click)="clearLocalStorageUser()">Logout</a></li>
+            <li><a>{{userName | titlecase}}</a></li>
+            <li><a href="">Cart(0)</a></li>
+        </ul>
     </div>
 </nav>
