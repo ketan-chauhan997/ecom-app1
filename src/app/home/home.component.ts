@@ -13,11 +13,11 @@ export class HomeComponent {
   constructor(private product:ProductService){};
   ngOnInit():void{
     this.product.popularPorducts().subscribe((result)=>{
-      console.warn(result);
+      // console.warn(result);
       this.productsCarousel=result;
     })
     this.product.productList().subscribe((result)=>{
-      console.warn(result);
+      // console.warn(result);
       this.prodList=result;
     })
   }

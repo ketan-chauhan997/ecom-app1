@@ -20,7 +20,7 @@ export class HeaderComponent {
       if(value.url){
         if(localStorage.getItem('seller') && value.url.includes('seller')){
           this.sellerName=''
-          console.warn("Inside seller area");
+          // console.warn("Inside seller area");
           this.navBarType='seller';
           let sellerVar= localStorage.getItem('seller');
           let sellerData= sellerVar && JSON.parse(sellerVar);
@@ -28,16 +28,16 @@ export class HeaderComponent {
         }
         else if (localStorage.getItem('user') ){
           this.userName='';
-          console.warn('Inside User area');
+          // console.warn('Inside User area');
           this.navBarType='user';
           let userVar= localStorage.getItem('user');
           let userData= userVar && JSON.parse(userVar);
-          console.warn(userData);
-          console.warn(userData[0].name)
+          // console.warn(userData);
+          // console.warn(userData[0].name)
           this.userName=userData[0].name;
         }
         else{
-          console.warn('Outside Seller');
+          // console.warn('Outside Seller');
           this.navBarType='default';
         }
       }
@@ -62,7 +62,7 @@ export class HeaderComponent {
     if(keyword){
       const element= keyword.target as HTMLInputElement;
       this.product.serachedProducts(element.value).subscribe((result)=>{
-        console.warn(result);
+        // console.warn(result);
         this.searchedProducts=result;
       })
     }

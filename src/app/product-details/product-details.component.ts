@@ -47,7 +47,7 @@ export class ProductDetailsComponent {
         console.warn('user logged in')
         // console.warn(this.productDetails);
         let user= localStorage.getItem('user');
-        let userId= user && JSON.parse(user)[0  ].id;
+        let userId= user && JSON.parse(user)[0].id;
         console.warn(userId);
         let cartData:Cart={
           ...this.productDetails,
@@ -55,7 +55,7 @@ export class ProductDetailsComponent {
           productId:this.productDetails.id
         }
         delete cartData.id;
-        // console.warn(cartData)
+        console.warn(cartData)
         this.product.AddToUserCart(cartData).subscribe(result=>{
           console.warn(result);
           alert('Product is added to cart!')
