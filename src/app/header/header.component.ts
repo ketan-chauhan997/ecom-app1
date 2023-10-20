@@ -35,6 +35,7 @@ export class HeaderComponent {
           // console.warn(userData);
           // console.warn(userData[0].name)
           this.userName=userData[0].name;
+          this.product.getCartList(userData[0].id)
         }
         else{
           // console.warn('Outside Seller');
