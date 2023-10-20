@@ -155,6 +155,78 @@
       "userId": 2,
       "productId": 1,
       "id": 4
+    },
+    {
+      "prodName": "Samsung S22 Ultra",
+      "prodPrice": "125000",
+      "prodColor": "Dark Red",
+      "prodCategory": "1",
+      "prodDescription": "Samsung S22 Ultra 256 Gb Mobile",
+      "prodImageUrl": "https://m.media-amazon.com/images/I/71J8tz0UeJL._SL1500_.jpg",
+      "quantity": 1,
+      "userId": 2,
+      "productId": 2,
+      "id": 5
+    },
+    {
+      "prodName": "HP Victus Gaming Laptop",
+      "prodPrice": "84490",
+      "prodColor": "Blue",
+      "prodCategory": "1",
+      "prodDescription": "HP Victus Gaming Laptop AMD Ryzen 7",
+      "prodImageUrl": "https://m.media-amazon.com/images/I/71ckDfWKZ8L._SX679_.jpg",
+      "quantity": 1,
+      "userId": 2,
+      "productId": 6,
+      "id": 6
+    },
+    {
+      "prodName": "Iphone 11",
+      "prodPrice": "50000",
+      "prodColor": "White",
+      "prodCategory": "1",
+      "prodDescription": "Iphone 11 64 Gb Mobile",
+      "prodImageUrl": "https://m.media-amazon.com/images/I/71QE00iB9IL._SL1500_.jpg",
+      "quantity": 1,
+      "userId": 2,
+      "productId": 1,
+      "id": 7
+    },
+    {
+      "prodName": "HP Victus Gaming Laptop",
+      "prodPrice": "84490",
+      "prodColor": "Blue",
+      "prodCategory": "1",
+      "prodDescription": "HP Victus Gaming Laptop AMD Ryzen 7",
+      "prodImageUrl": "https://m.media-amazon.com/images/I/71ckDfWKZ8L._SX679_.jpg",
+      "quantity": 1,
+      "userId": 2,
+      "productId": 6,
+      "id": 8
+    },
+    {
+      "prodName": "Iphone 11",
+      "prodPrice": "50000",
+      "prodColor": "White",
+      "prodCategory": "1",
+      "prodDescription": "Iphone 11 64 Gb Mobile",
+      "prodImageUrl": "https://m.media-amazon.com/images/I/71QE00iB9IL._SL1500_.jpg",
+      "quantity": 1,
+      "userId": 2,
+      "productId": 1,
+      "id": 9
+    },
+    {
+      "prodName": "Dumbbells 5 Kg",
+      "prodPrice": "1490",
+      "prodColor": "Black Silver",
+      "prodCategory": "4",
+      "prodDescription": "Slovic Dumbbells 5 Kg Gym Accessories",
+      "prodImageUrl": "https://m.media-amazon.com/images/I/81f-IgegatL._SX679_.jpg",
+      "quantity": 1,
+      "userId": 2,
+      "productId": 5,
+      "id": 10
     }
   ]
 }

@@ -56,7 +56,8 @@ export class HeaderComponent {
   }
   clearLocalStorageUser():void{
     localStorage.removeItem('user');
-    this.route.navigate(['/user-auth'])
+    this.route.navigate(['/user-auth']);
+    this.product.cartData.emit([]);
   }
   searchedProduct(keyword:KeyboardEvent){
     if(keyword){

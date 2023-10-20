@@ -43,11 +43,12 @@ export class UserAuthComponent {
 
   localCartToRemoteCart() {
     let data = localStorage.getItem('localCart');
+    let user = localStorage.getItem('user');
+    // console.warn('Check',user);
+    let userId = user && JSON.parse(user)[0].id;
     if (data) {
       let cartDataList: Product[] = JSON.parse(data);
-      let user = localStorage.getItem('user');
-      // console.warn('Check',user);
-      let userId = user && JSON.parse(user)[0].id;
+
       // console.warn('Check',userId);
       cartDataList.forEach((product: Product, index) => {
         let cartData: Cart = {
@@ -70,5 +71,9 @@ export class UserAuthComponent {
         }, 2000);
       })
     }
+    setTimeout(() => {
+      this.prod.getCartList(userId);
+    }, 2000);
   }
+
 }
