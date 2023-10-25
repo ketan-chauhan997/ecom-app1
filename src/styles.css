@@ -42,3 +42,7 @@ body{
     font-size: 12px;
     margin-top: -20px;
 }
+
+.max-width{
+    width: 100%;
+}
