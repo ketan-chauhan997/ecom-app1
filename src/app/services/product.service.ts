@@ -83,4 +83,10 @@ export class ProductService {
   RemoveToCartDb(cartId:number){
     return this.http.delete('http://localhost:3000/cart/'+cartId);
   }
+
+  currentCart(){
+    let user= localStorage.getItem('user');
+    let userId= user && JSON.parse(user)[0].id;
+    return this.http.get<Cart[]>(`http://localhost:3000/cart?userId=${userId}`)
+  }
 }

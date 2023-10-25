@@ -10,7 +10,7 @@ export interface Login{
 }
 export interface Product{
     prodName:string,
-    prodPrice:string,
+    prodPrice:number,
     prodColor:string,
     prodCategory:string,
     prodDescription:string,
@@ -21,7 +21,7 @@ export interface Product{
 }
 export interface Cart{
     prodName:string,
-    prodPrice:string,
+    prodPrice:number,
     prodColor:string,
     prodCategory:string,
     prodDescription:string,
@@ -30,4 +30,12 @@ export interface Cart{
     quantity:undefined|number,
     userId:number,
     productId:number
+}
+
+export interface Summary{
+    amount:number,
+    tax:number,
+    delivery:number,
+    discount:number,
+    total:number
 }

@@ -2,126 +2,41 @@
     <h1>Cart Page</h1>
     <div class="row">
         <div class="col-sm-8 details">
-            <ul>
+            <ul *ngFor="let prod of userCart">
                 <li>
-                        <img src="https://m.media-amazon.com/images/I/71J8tz0UeJL._SL1500_.jpg" alt="">
+                        <img src="{{prod.prodImageUrl}}" alt="">
                 </li>
                 <li>
-                    <span>Product Name</span>
+                    <span>{{prod.prodName}}</span>
                 </li>
                 <li>
-                    Price : 100
+                    Price : {{prod.prodPrice}}
                 </li>
                 <li>
-                    <span>Quantity : 5</span>
-                </li>
-                <li>
-                    <button class="form-button">Remove</button>
-                </li>
-            </ul>
-            <ul>
-                <li>
-                        <img src="https://m.media-amazon.com/images/I/71J8tz0UeJL._SL1500_.jpg" alt="">
-                </li>
-                <li>
-                    <span>Product Name</span>
-                </li>
-                <li>
-                    Price : 100
-                </li>
-                <li>
-                    <span>Quantity : 5</span>
+                    <span>Quantity : {{prod.quantity}}</span>
                 </li>
                 <li>
                     <button class="form-button">Remove</button>
                 </li>
-            </ul>
-            <ul>
-                <li>
-                        <img src="https://m.media-amazon.com/images/I/71J8tz0UeJL._SL1500_.jpg" alt="">
-                </li>
-                <li>
-                    <span>Product Name</span>
-                </li>
-                <li>
-                    Price : 100
-                </li>
-                <li>
-                    <span>Quantity : 5</span>
-                </li>
-                <li>
-                    <button class="form-button">Remove</button>
-                </li>
-            </ul>
-            <ul>
-                <li>
-                        <img src="https://m.media-amazon.com/images/I/71J8tz0UeJL._SL1500_.jpg" alt="">
-                </li>
-                <li>
-                    <span>Product Name</span>
-                </li>
-                <li>
-                    Price : 100
-                </li>
-                <li>
-                    <span>Quantity : 5</span>
-                </li>
-                <li>
-                    <button class="form-button">Remove</button>
-                </li>
-            </ul>
-            <ul>
-                <li>
-                        <img src="https://m.media-amazon.com/images/I/71J8tz0UeJL._SL1500_.jpg" alt="">
-                </li>
-                <li>
-                    <span>Product Name</span>
-                </li>
-                <li>
-                    Price : 100
-                </li>
-                <li>
-                    <span>Quantity : 5</span>
-                </li>
-                <li>
-                    <button class="form-button">Remove</button>
-                </li>
-            </ul>
-            <ul>
-                <li>
-                        <img src="https://m.media-amazon.com/images/I/71J8tz0UeJL._SL1500_.jpg" alt="">
-                </li>
-                <li>
-                    <span>Product Name</span>
-                </li>
-                <li>
-                    Price : 100
-                </li>
-                <li>
-                    <span>Quantity : 5</span>
-                </li>
-                <li>
-                    <button class="form-button">Remove</button>
-                </li>
-            </ul>
+            </ul>  
         </div>
         <div class="col-sm-4 summary">
             <h3>Summary</h3>
             <ul>
                 <li>
-                    <span>Amount</span><span>300</span>
+                    <span>Amount</span><span>{{priceSummary.amount}}</span>
                 </li>
                 <li>
-                    <span>Tax</span><span>30</span>
+                    <span>Tax</span><span>{{priceSummary.tax}}</span>
                 </li>
                 <li>
-                    <span>Delivery Charges</span><span>20</span>
+                    <span>Delivery Charges</span><span>{{priceSummary.delivery}}</span>
                 </li>
                 <li>
-                    <span>Discount</span><span>50</span>
+                    <span>Discount</span><span>{{priceSummary.discount}}</span>
                 </li>
                 <li>
-                    <span><h4>Total</h4></span><span><h4>300</h4></span>
+                    <span><h4>Total</h4></span><span><h4>{{priceSummary.total}}</h4></span>
                 </li>
             </ul>
         </div>
