@@ -192,5 +192,15 @@
       "productId": 3,
       "id": 7
     }
+  ],
+  "orders": [
+    {
+      "email": "kanchan@gmail.com",
+      "address": "132/7 Banayak",
+      "contact": "7018329093",
+      "totalPrice": 137265,
+      "userId": 2,
+      "id": 1
+    }
   ]
 }
