@@ -17,83 +17,15 @@
             <span>Action</span>
         </div>
     </div>
-    <div class="row order-data">
+    <div class="row order-data" *ngFor="let order of orderData">
         <div class="col-sm-2">
             <img class="order-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQU5wLJCPXEzLRxyYPJKe5-07diM_rmi120Yw&usqp=CAU" alt="">
         </div>
         <div class="col-sm-2">
-            <span>#100</span>
+            <span>#{{order.id}}</span>
         </div>
         <div class="col-sm-2">
-            <span>1200</span>
-        </div>
-        <div class="col-sm-2">
-            <span>In Process</span>
-        </div>
-        <div class="col-sm-2">
-            <button class="form-button">Cancel Order</button>
-        </div>
-    </div>
-    <div class="row order-data">
-        <div class="col-sm-2">
-            <img class="order-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQU5wLJCPXEzLRxyYPJKe5-07diM_rmi120Yw&usqp=CAU" alt="">
-        </div>
-        <div class="col-sm-2">
-            <span>#100</span>
-        </div>
-        <div class="col-sm-2">
-            <span>1200</span>
-        </div>
-        <div class="col-sm-2">
-            <span>In Process</span>
-        </div>
-        <div class="col-sm-2">
-            <button class="form-button">Cancel Order</button>
-        </div>
-    </div>
-    <div class="row order-data">
-        <div class="col-sm-2">
-            <img class="order-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQU5wLJCPXEzLRxyYPJKe5-07diM_rmi120Yw&usqp=CAU" alt="">
-        </div>
-        <div class="col-sm-2">
-            <span>#100</span>
-        </div>
-        <div class="col-sm-2">
-            <span>1200</span>
-        </div>
-        <div class="col-sm-2">
-            <span>In Process</span>
-        </div>
-        <div class="col-sm-2">
-            <button class="form-button">Cancel Order</button>
-        </div>
-    </div>
-    <div class="row order-data">
-        <div class="col-sm-2">
-            <img class="order-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQU5wLJCPXEzLRxyYPJKe5-07diM_rmi120Yw&usqp=CAU" alt="">
-        </div>
-        <div class="col-sm-2">
-            <span>#100</span>
-        </div>
-        <div class="col-sm-2">
-            <span>1200</span>
-        </div>
-        <div class="col-sm-2">
-            <span>In Process</span>
-        </div>
-        <div class="col-sm-2">
-            <button class="form-button">Cancel Order</button>
-        </div>
-    </div>
-    <div class="row order-data">
-        <div class="col-sm-2">
-            <img class="order-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQU5wLJCPXEzLRxyYPJKe5-07diM_rmi120Yw&usqp=CAU" alt="">
-        </div>
-        <div class="col-sm-2">
-            <span>#100</span>
-        </div>
-        <div class="col-sm-2">
-            <span>1200</span>
+            <span>{{order.totalPrice}}</span>
         </div>
         <div class="col-sm-2">
             <span>In Process</span>

@@ -143,60 +143,12 @@
       "userId": 1,
       "productId": 3,
       "id": 3
-    },
-    {
-      "prodName": "Iphone 11",
-      "prodPrice": "50000",
-      "prodColor": "White",
-      "prodCategory": "1",
-      "prodDescription": "Iphone 11 64 Gb Mobile",
-      "prodImageUrl": "https://m.media-amazon.com/images/I/71QE00iB9IL._SL1500_.jpg",
-      "quantity": 1,
-      "userId": 2,
-      "productId": 1,
-      "id": 4
-    },
-    {
-      "prodName": "HP Victus Gaming Laptop",
-      "prodPrice": "84490",
-      "prodColor": "Blue",
-      "prodCategory": "1",
-      "prodDescription": "HP Victus Gaming Laptop AMD Ryzen 7",
-      "prodImageUrl": "https://m.media-amazon.com/images/I/71ckDfWKZ8L._SX679_.jpg",
-      "quantity": 1,
-      "userId": 2,
-      "productId": 6,
-      "id": 5
-    },
-    {
-      "prodName": "Dumbbells 5 Kg",
-      "prodPrice": "1490",
-      "prodColor": "Black Silver",
-      "prodCategory": "4",
-      "prodDescription": "Slovic Dumbbells 5 Kg Gym Accessories",
-      "prodImageUrl": "https://m.media-amazon.com/images/I/81f-IgegatL._SX679_.jpg",
-      "quantity": 1,
-      "userId": 2,
-      "productId": 5,
-      "id": 6
-    },
-    {
-      "prodName": "Men Supporter",
-      "prodPrice": "395",
-      "prodColor": "Black",
-      "prodCategory": "2",
-      "prodDescription": "Supporter men Black Color Gym Accessories",
-      "prodImageUrl": "https://m.media-amazon.com/images/I/61A29Snco0L._SL1500_.jpg",
-      "quantity": 3,
-      "userId": 2,
-      "productId": 3,
-      "id": 7
     }
   ],
   "orders": [
     {
       "email": "kanchan@gmail.com",
-      "address": "132/7 Banayak",
+      "address": "132/7 Village Banayak Post Office Bhojpur Tehsil Sunder Nagar District Mandi HP",
       "contact": "7018329093",
       "totalPrice": 137265,
       "userId": 2,

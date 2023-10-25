@@ -93,4 +93,18 @@ export class ProductService {
   orderNow(data:Order){
     return this.http.post('http://localhost:3000/orders',data);
   }
+
+  myOrders(){
+    let user= localStorage.getItem('user');
+    let userId= user && JSON.parse(user)[0].id;
+    return this.http.get<Order[]>(`http://localhost:3000/orders?userId=${userId}`);
+  }
+
+  deleteCartItems(cartId:number){
+    return this.http.delete('http://localhost:3000/cart/'+cartId,{observe:'response'}).subscribe((result)=>{
+      if(result){
+        this.cartData.emit([]);
+      }
+    })
+  }
 }
